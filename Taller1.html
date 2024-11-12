@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El gato con botas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF4E6; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #ff9800; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .navbar a.navbar-brand {
+            font-size: 1.5rem;
+            color: white;
+            font-weight: bold;
+        }
+        .navbar-nav .nav-link {
+            color: white !important; 
+            font-size: 1.1rem;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffd54f !important;
+        }
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ccc;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+        }
+        .profile-info h3 {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #28a745;
+            font-size: 1.5em;
+        }
+        .about-section {
+            padding: 20px;
+            background-color: #f1f1f1; 
+            border-top: 1px solid #ccc;
+            text-align: center;
+        }
+        .about-section h2 {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .about-section p {
+            line-height: 1.6;
+        }
+        .list-section, .form-section {
+            padding: 20px;
+            background-color: #ffffff; 
+            text-align: center;
+            border-top: 1px solid #ccc;
+        }
+        .list-section ul {
+            list-style-type: disc; 
+            padding-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ccc;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+      
+        .search-bar input {
+            width: 100px; 
+            padding: 6px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            border: 2px solid rgba(0, 0, 0, 0.2); 
+            margin-right: 8px;
+            background-color: rgba(255, 255, 255, 0.7); 
+            transition: border-color 0.3s;
+        }
+
+        .search-bar button {
+            padding: 2px 5px;
+            background-color: #ff9800; 
+            border: 2px solid #ff9800;
+            color: white;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-bar button:hover {
+            background-color: #e68900; 
+        }
+
+        .search-bar input:focus {
+            border-color: #ff9800; 
+            outline: none;
+        }
+
+        
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">El Gato con Botas</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Personajes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Suscribirse</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Barra de búsqueda en la parte superior izquierda -->
+<div class="search-bar container-fluid text-left mt-2">
+    <input type="text" placeholder="Busca algo...">
+    <button>Buscar</button>
+</div>
+
+<div class="container">
+    <div class="profile-section">
+        <img src="C:\Users\nikol\Downloads\2000x1125.jpg" class="profile-image" alt="Imagen de El Gato con Botas">
+        <h3>El Gato con Botas</h3>
+        <p>Héroe intrépido y aventurero</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <!-- Sección de "About" -->
+    <div class="about-section">
+        <h2>Sobre la Película</h2>
+        <p>El Gato con Botas es una película llena de aventuras y comedia. Para más información sobre la película, puedes visitar su perfil en 
+        <a href="https://www.imdb.com" target="_blank">IMDB</a>.</p>
+        <p>La historia sigue al famoso gato en su búsqueda de una aventura épica llena de magia y personajes interesantes.</p>
+    </div>
+
+    <!-- Zona de lista -->
+    <div class="list-section">
+        <h3>Personajes Principales</h3>
+        <ul class="list-unstyled">
+            <li>El Gato con Botas</li>
+            <li>Kitty Patitas Suaves</li>
+            <li>Humpty Dumpty</li>
+            <li>Perla</li>
+        </ul>
+    </div>
+
+    <!-- Zona de formulario -->
+    <div class="form-section">
+        <h3>Suscríbete para recibir noticias</h3>
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+            </div>
+            <button type="submit" class="btn btn-primary">Suscribirse</button>
+        </form>
+    </div>
+</div>
+
+<div class="row text-center">
+    <div class="col-12">
+        <a href="https://www.netflix.com/co-en/title/80018988" target="_blank" class="btn btn-danger">
+            Ve película 
+        </a>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <p>Creado por Nikol De La Cruz</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+
+
+
